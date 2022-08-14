@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<script src="anime.min.js"></script>
+
+</head>
+<body>
+  
+  <div>
+
+  </div>
+
+  <!--About-->
+
+  <div class="about-popup">
+    <div class="creator-profile-container">
+      <div class="available-icon"></div>
+      <img src="images/Haris webgl dev.jpg">
+    </div>
+
+    <h1>Haris imran</h1>
+  </div>
+
+  <audio id="myAudio">
+    <source src="click-audio.wav" type="audio/mpeg">
+  </audio>
+  
+
+   <!-- Options -->
+
+<div class="Home-container option">
+<img src="https://images.unsplash.com/photo-1508739773434-c26b3d09e071?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+<h1 class="current-time">9:00</h1>
+</div>
+
+  <div class="task-container option">
+   <div class="task-creator">
+
+    <div class="task-input-container">
+    <input class="task-input" placeholder="Type Something ..." type="text">
+    <i class="bi bi-x"></i>
+   </div>
+
+    <button class="create-task-btn">Create</button>
+    <button class="delete-task-btn">Delete</button>
+    <i class="trash-all-task bi bi-trash-fill"></i>
+   </div>
+
+   <h1>My tasks</h1>
+   
+  </div>
+
+  <div class="calender-container option">
+    <p class="calender-text">Calender View</p>
+    <div class="date">
+      <p>Mon</p>
+      <p>Tues</p>
+      <p>Wed</p>
+      <p>Thur</p>
+      <p>Fri</p>
+      <p>Sat</p>
+      <p>Sun</p>
+
+    </div>
+    
+    <div class="num"></div>
+    
+    </div>
+
+ 
+      <!--End Options -->
+
+<!-- Login screen -->
+
+  <div class="Login-container">
+    <div class="login-card">
+
+      <div class="login-avatar">
+      <img class="login-avatar-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOxSS-sAygvA0cuD8YNoCqs5ZJUt3KmjHa0g&usqp=CAU">
+      <input type="file" class="avatar-changer">
+      </div>
+
+
+      <input type="text" class="username">
+      <input type="text" class="user-category">
+      <button class="submit-login">Submit</button>
+    </div>
+  </div>
+
+  <!--End Login screen -->
+
+    
+     <div class="container">
+        <div class="calender">
+
+            <div class="row-1">
+               <div class="user-info">
+
+                <i class="close-icon bi bi-x"></i>
+
+                <div class="options-container">
+
+                  <div class="option-btn">
+                    <i class="bi bi-house-fill"></i>
+                    <p>Home</p>
+                  </div>
+               
+                  <div class="option-btn">
+                    <i class="bi bi-list-task task-option"></i>
+                    <p>Task</p>
+                  </div>
+
+                  <div class="option-btn">
+                    <i class="bi bi-calendar-fill calender-option"></i>
+                    <p>Calender</p>
+                  </div>
+
+                  <div class="option-btn">
+                    <i class="bi bi-alarm-fill goal-option"></i>
+                    <p>Goal</p>
+                  </div>
+
+    
+
+                  </div>
+
+                <div class="bottom-nav">
+
+                  <div class="bottom-icons dark-mode-icon">
+                    <i class="bi bi-moon-stars-fill"></i>
+                  </div>
+ 
+                  <div class="bottom-icons personalize-icon">
+                    <i class="bi bi-brush-fill"></i>
+                  </div>
+
+                  <div class="bottom-icons about-icon">
+                    <i class="bi bi-question-circle-fill"></i>
+                  </div>
+                 
+
+                </div>
+             
+              </div>
+
+                <img class="profile" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOxSS-sAygvA0cuD8YNoCqs5ZJUt3KmjHa0g&usqp=CAU">
+                <h1 class="name">Haris Imran</h1>
+                <p class="category">WebGL Dev</p>
+
+                <p class="quote">"Bringing the visuals to Reality"</p>
+
+                 <div class="social-icons-container">
+
+                <img class="social-logo facebook-logo" src="icons8-facebook.svg">
+                <img class="social-logo instagram-logo" src="icons8-instagram.svg">
+                <img class="social-logo web-logo" src="icons8-internet-96.png">
+
+               </div>
+
+            </div>
+
+            <div class="row-2"></div>
+
+        </div>
+     </div>
+
+     <script src="main.js"></script>  
+     <script src="Color-mode.js"></script>
+     <script src="Calender.js"></script>
+     <script src="Notification.js"></script>
+     <script src="Home.js"></script>
+     <script type="module" src="Task.js"></script>
+     <script type="module" src="Options.js"></script>
+     <script type="module" src="Login.js"></script>
+
+    </body>
+</html>
